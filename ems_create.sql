@@ -9,6 +9,13 @@ CREATE TABLE departments
     manager_id NUMBER(6)
 );
 
+CREATE SEQUENCE departments_seq
+START WITH 200
+INCREMENT BY 10
+MAXVALUE 9999
+NOCACHE
+NOCYCLE;
+
 CREATE TABLE jobs
 (
     job_id VARCHAR2(10),
@@ -48,6 +55,13 @@ CREATE TABLE employees
             departments (deparment_id)
 );
 
+
+CREATE SEQUENCE employees_seq
+START WITH 100
+INCREMENT BY 10
+MAXVALUE 500
+NOCACHE
+NOCYCLE;
 
 ----EMS emp_detail_view displays a joined version 
 
