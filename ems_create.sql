@@ -15,7 +15,11 @@ CREATE TABLE jobs
     job_title VARCHAR2(35)
         CONSTRAINT     job_title_nn  NOT NULL,
     max_salary NUMBER(6),
+        CONSTRAINT max_salary_ck 
+        Check (max_salary <= 60000),
     min_salary NUMBER(6)
+        CONSTRAINT min_salary_ck 
+        CHECK (min_salary >= 30000)
 );
 
 CREATE TABLE employees
@@ -31,9 +35,9 @@ CREATE TABLE employees
         CONSTRAINT emp_email_uk UNIQUE,
     phone_number VARCHAR2(11),
     hire_date DATE
-    CONSTRAINT  emp_hire_date_nn NOT NUll,
+        CONSTRAINT  emp_hire_date_nn NOT NUll,
     job_id VARCHAR2(10)
-    CONSTRAINT  emp_job_nn NOT NULL,
+        CONSTRAINT  emp_job_nn NOT NULL,
     salary NUMBER(8,2)
         CONSTRAINT     emp_salary_nn  NOT NULL
         CONSTRAINT     emp_salary_ck  CHECK (salary>0),
