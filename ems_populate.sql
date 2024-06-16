@@ -1,6 +1,6 @@
 
 ----------
-
+--Inserting data into Department table 
 
 BEGIN
   INSERT INTO departments VALUES
@@ -194,6 +194,7 @@ BEGIN
 END;
 
 --------------
+--Inserting data into Employee table 
 
 BEGIN
   INSERT INTO employees VALUES
@@ -1696,6 +1697,7 @@ BEGIN
 END;
 
 ----------------
+--Inserting data into jobs table 
 
 BEGIN
   INSERT INTO jobs VALUES
