@@ -49,5 +49,45 @@ CREATE TABLE employees
 );
 
 
+----EMS emp_detail_view displays a joined version 
+
+CREATE OR REPLACE VIEW  emp_details_view
+(
+        employee_id,
+        first_name,
+        last_name,
+        email,
+        phone_number,
+        hire_date,
+        department_id,
+        department_name,
+        job_id,
+        job_title,
+        salary,
+        department_name,
+        manager_id)
+    AS SELECT
+        e.employee_id,
+        e.first_name,
+        e.last_name,
+        e.email,
+        e.phone_number,
+        e.hire_date,
+        d.department_id,
+        d.department_name,
+        j,job_id,
+        j. job_title,
+        e.salary,
+        d.department_name,
+        e.manager_id
+    FROM
+        employee e,
+        jobs j,
+        departments d
+    WHERE
+    e.job_id = j.job_id
+    AND e.department_id = d.department_id
+    WITH READ ONLY; 
+
 
 
