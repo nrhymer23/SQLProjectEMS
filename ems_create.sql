@@ -29,31 +29,31 @@ CREATE TABLE jobs
         CHECK (min_salary >= 30000)
 );
 
-CREATE TABLE employees
-(
+CREATE TABLE employees (
     employee_id NUMBER(3)
-        CONSTRAINT     employee_id_pk   PRIMARY KEY,
+        CONSTRAINT employee_id_pk PRIMARY KEY,
     first_name VARCHAR2(15),
-    last_name VARCHAR2(20),
-        CONSTRAINT     emp_last_name_nn  NOT NULL,
-    phone_number VARCHAR2(10),
+    last_name VARCHAR2(20)
+        CONSTRAINT emp_last_name_nn NOT NULL,
     email VARCHAR2(30)
-        CONSTRAINT emp_email_nn Not NULL
+        CONSTRAINT emp_email_nn NOT NULL
         CONSTRAINT emp_email_uk UNIQUE,
-    phone_number VARCHAR2(11),
+    phone_number VARCHAR2(14),
     hire_date DATE
-        CONSTRAINT  emp_hire_date_nn NOT NUll,
+        CONSTRAINT emp_hire_date_nn NOT NULL,
     job_id VARCHAR2(10)
-        CONSTRAINT  emp_job_nn NOT NULL,
+        CONSTRAINT emp_job_nn NOT NULL,
     salary NUMBER(8,2)
-        CONSTRAINT     emp_salary_nn  NOT NULL
-        CONSTRAINT     emp_salary_ck  CHECK (salary>0),
+        CONSTRAINT emp_salary_nn NOT NULL
+        CONSTRAINT emp_salary_ck CHECK (salary > 0),
     commission_pct NUMBER(2,2),
     manager_id NUMBER(6),
     department_id NUMBER(4)
-        CONSTRAINT  emp_dept_fk References 
-            departments (deparment_id)
+        CONSTRAINT emp_dept_fk REFERENCES departments(department_id)
 );
+
+drop table employees;
+
 
 
 CREATE SEQUENCE employees_seq
@@ -78,7 +78,6 @@ CREATE OR REPLACE VIEW  emp_details_view
         job_id,
         job_title,
         salary,
-        department_name,
         manager_id)
     AS SELECT
         e.employee_id,
@@ -89,13 +88,12 @@ CREATE OR REPLACE VIEW  emp_details_view
         e.hire_date,
         d.department_id,
         d.department_name,
-        j,job_id,
-        j. job_title,
+        j.job_id,
+        j.job_title,
         e.salary,
-        d.department_name,
         e.manager_id
     FROM
-        employee e,
+        employees e,
         jobs j,
         departments d
     WHERE

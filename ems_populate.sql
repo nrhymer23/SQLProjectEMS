@@ -6,191 +6,135 @@ BEGIN
   INSERT INTO departments VALUES
       ( 10
       , 'Administration'
-      , 200
-      , 1700
-      );
+      , 200 );
 
   INSERT INTO departments VALUES
       ( 20
       , 'Marketing'
-      , 201
-      , 1800
-      );
+      , 201 );
 
   INSERT INTO departments VALUES
       ( 30
       , 'Purchasing'
-      , 114
-      , 1700
-      );
+      , 114);
 
   INSERT INTO departments VALUES
       ( 40
       , 'Human Resources'
-      , 203
-      , 2400
-      );
+      , 203 );
 
   INSERT INTO departments VALUES
-      ( 50
-      , 'Shipping'
-      , 121
-      , 1500
-      );
+      ( 50, 'Shipping', 121 );
 
   INSERT INTO departments VALUES
       ( 60
       , 'IT'
-      , 103
-      , 1400
-      );
+      , 103);
 
   INSERT INTO departments VALUES
       ( 70
       , 'Public Relations'
-      , 204
-      , 2700
-      );
+      , 204);
 
   INSERT INTO departments VALUES
       ( 80
       , 'Sales'
-      , 145
-      , 2500
-      );
+      , 145);
 
   INSERT INTO departments VALUES
       ( 90
       , 'Executive'
-      , 100
-      , 1700
-      );
+      , 100);
 
   INSERT INTO departments VALUES
       ( 100
       , 'Finance'
-      , 108
-      , 1700
-      );
+      , 108 );
 
   INSERT INTO departments VALUES
       ( 110
       , 'Accounting'
-      , 205
-      , 1700
-      );
+      , 205 );
 
   INSERT INTO departments VALUES
       ( 120
       , 'Treasury'
-      , NULL
-      , 1700
-      );
+      , NULL);
 
   INSERT INTO departments VALUES
       ( 130
       , 'Corporate Tax'
-      , NULL
-      , 1700
-      );
+      , NULL);
 
   INSERT INTO departments VALUES
       ( 140
       , 'Control And Credit'
-      , NULL
-      , 1700
-      );
+      , NULL);
 
   INSERT INTO departments VALUES
       ( 150
       , 'Shareholder Services'
-      , NULL
-      , 1700
-      );
+      , NULL );
 
   INSERT INTO departments VALUES
       ( 160
       , 'Benefits'
-      , NULL
-      , 1700
-      );
+      , NULL);
 
   INSERT INTO departments VALUES
       ( 170
       , 'Manufacturing'
-      , NULL
-      , 1700
-      );
+      , NULL );
 
   INSERT INTO departments VALUES
       ( 180
       , 'Construction'
-      , NULL
-      , 1700
-      );
+      , NULL);
 
   INSERT INTO departments VALUES
       ( 190
       , 'Contracting'
-      , NULL
-      , 1700
-      );
+      , NULL );
 
   INSERT INTO departments VALUES
       ( 200
       , 'Operations'
-      , NULL
-      , 1700
-      );
+      , NULL);
 
   INSERT INTO departments VALUES
       ( 210
       , 'IT Support'
-      , NULL
-      , 1700
-      );
+      , NULL);
 
   INSERT INTO departments VALUES
       ( 220
       , 'NOC'
-      , NULL
-      , 1700
-      );
+      , NULL);
 
   INSERT INTO departments VALUES
       ( 230
       , 'IT Helpdesk'
-      , NULL
-      , 1700
-      );
+      , NULL );
 
   INSERT INTO departments VALUES
       ( 240
       , 'Government Sales'
-      , NULL
-      , 1700
-      );
+      , NULL);
 
   INSERT INTO departments VALUES
       ( 250
       , 'Retail Sales'
-      , NULL
-      , 1700
-      );
+      , NULL);
 
   INSERT INTO departments VALUES
       ( 260
       , 'Recruiting'
-      , NULL
-      , 1700
-      );
+      , NULL);
 
   INSERT INTO departments VALUES
       ( 270
       , 'Payroll'
-      , NULL
-      , 1700
-      );
+      , NULL);
 END;
 
 --------------
@@ -1703,130 +1647,134 @@ BEGIN
   INSERT INTO jobs VALUES
       ( 'AD_PRES'
       , 'President'
-      , 20080
-      , 40000
+      , 50000
+      , 100000
       );
   INSERT INTO jobs VALUES
       ( 'AD_VP'
       , 'Administration Vice President'
-      , 15000
-      , 30000
+      , 45000
+      , 90000
       );
 
   INSERT INTO jobs VALUES
       ( 'AD_ASST'
       , 'Administration Assistant'
-      , 3000
-      , 6000
+      , 32000
+      , 50000
       );
 
   INSERT INTO jobs VALUES
       ( 'FI_MGR'
       , 'Finance Manager'
-      , 8200
-      , 16000
+      , 32000
+      , 55000
       );
 
   INSERT INTO jobs VALUES
       ( 'FI_ACCOUNT'
       , 'Accountant'
-      , 4200
-      , 9000
+      , 32000
+      , 55000
       );
 
   INSERT INTO jobs VALUES
       ( 'AC_MGR'
       , 'Accounting Manager'
-      , 8200
-      , 16000
+      , 32000
+      , 55000
       );
 
   INSERT INTO jobs VALUES
       ( 'AC_ACCOUNT'
       , 'Public Accountant'
-      , 4200
-      , 9000
+      , 32000
+      , 55000
       );
   INSERT INTO jobs VALUES
       ( 'SA_MAN'
       , 'Sales Manager'
-      , 10000
-      , 20080
+      , 32000
+      , 70000
       );
 
   INSERT INTO jobs VALUES
       ( 'SA_REP'
       , 'Sales Representative'
-      , 6000
-      , 12008
+      , 32000
+      , 70000
       );
 
   INSERT INTO jobs VALUES
       ( 'PU_MAN'
       , 'Purchasing Manager'
-      , 8000
-      , 15000
+      , 32000
+      , 75000
       );
 
   INSERT INTO jobs VALUES
       ( 'PU_CLERK'
       , 'Purchasing Clerk'
-      , 2500
-      , 5500
+      , 32000
+      , 60000
       );
 
   INSERT INTO jobs VALUES
       ( 'ST_MAN'
       , 'Stock Manager'
-      , 5500
-      , 8500
+      , 33000
+      , 85000
       );
   INSERT INTO jobs VALUES
       ( 'ST_CLERK'
       , 'Stock Clerk'
-      , 2008
-      , 5000
+      , 32000
+      , 70000
       );
 
   INSERT INTO jobs VALUES
       ( 'SH_CLERK'
       , 'Shipping Clerk'
-      , 2500
-      , 5500
+      , 32000
+      , 70000
       );
 
   INSERT INTO jobs VALUES
       ( 'IT_PROG'
       , 'Programmer'
-      , 4000
-      , 10000
+      , 42000
+      , 80000
       );
 
   INSERT INTO jobs VALUES
       ( 'MK_MAN'
       , 'Marketing Manager'
-      , 9000
-      , 15000
+      , 32000
+      , 65000
       );
 
   INSERT INTO jobs VALUES
       ( 'MK_REP'
       , 'Marketing Representative'
-      , 4000
-      , 9000
+      , 32000
+      , 50000
       );
 
   INSERT INTO jobs VALUES
       ( 'HR_REP'
       , 'Human Resources Representative'
-      , 4000
-      , 9000
+      , 32000
+      , 55000
       );
 
   INSERT INTO jobs VALUES
       ( 'PR_REP'
       , 'Public Relations Representative'
-      , 4500
-      , 10500
+      , 32000
+      , 60000
       );
 END;
+
+Select * from employees;
+SELECT * from jobs;
+select * from DEPARTMENTS;
