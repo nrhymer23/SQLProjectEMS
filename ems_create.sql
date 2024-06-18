@@ -75,41 +75,38 @@ drop table employees;
 
 ----EMS emp_detail_view displays a joined version for prequeried report
 
-CREATE OR REPLACE VIEW  emp_details_view
-(
-        employee_id,
-        first_name,
-        last_name,
-        email,
-        phone_number,
-        hire_date,
-        department_id,
-        department_name,
-        job_id,
-        job_title,
-        salary,
-        manager_id)
-    AS SELECT
-        e.employee_id,
-        e.first_name,
-        e.last_name,
-        e.email,
-        e.phone_number,
-        e.hire_date,
-        d.department_id,
-        d.department_name,
-        j.job_id,
-        j.job_title,
-        e.salary,
-        e.manager_id
-    FROM
-        employees e,
-        jobs j,
-        departments d
-    WHERE
-    e.job_id = j.job_id
-    AND e.department_id = d.department_id
-    WITH READ ONLY; 
+CREATE OR REPLACE VIEW emp_details_view (
+    employee_id,
+    first_name,
+    last_name,
+    email,
+    phone_number,
+    hire_date,
+    department_id,
+    department_name,
+    job_id,
+    job_title,
+    salary,
+    manager_id
+) AS
+SELECT
+    e.employee_id,
+    e.first_name,
+    e.last_name,
+    e.email,
+    e.phone_number,
+    e.hire_date,
+    d.department_id,
+    d.department_name,
+    j.job_id,
+    j.job_title,
+    e.salary,
+    e.manager_id
+FROM
+    employees e
+    JOIN jobs j ON e.job_id = j.job_id
+    JOIN departments d ON e.department_id = d.department_id
+WITH READ ONLY;
 
 
 
