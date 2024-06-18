@@ -2,137 +2,138 @@
 ----------
 --Inserting data into Department table 
 
+
 BEGIN
   INSERT INTO departments VALUES
-      ( departments_seq.NEXTVAL
+      ( 10
       , 'Administration'
       , 200 );
 
   INSERT INTO departments VALUES
-      ( departments_seq.NEXTVAL
+      ( 20
       , 'Marketing'
       , 201 );
 
   INSERT INTO departments VALUES
-      ( departments_seq.NEXTVAL
+      ( 30
       , 'Purchasing'
       , 114);
 
   INSERT INTO departments VALUES
-      ( departments_seq.NEXTVAL
+      ( 40
       , 'Human Resources'
       , 203 );
 
   INSERT INTO departments VALUES
-      ( departments_seq.NEXTVAL, 'Shipping', 121 );
+      ( 50, 'Shipping', 121 );
 
   INSERT INTO departments VALUES
-      ( departments_seq.NEXTVAL
+      ( 60
       , 'IT'
       , 103);
 
   INSERT INTO departments VALUES
-      ( departments_seq.NEXTVAL
+      ( 70
       , 'Public Relations'
       , 204);
 
   INSERT INTO departments VALUES
-      ( departments_seq.NEXTVAL
+      ( 80
       , 'Sales'
       , 145);
 
   INSERT INTO departments VALUES
-      ( departments_seq.NEXTVAL
+      ( 90
       , 'Executive'
       , 100);
 
   INSERT INTO departments VALUES
-      ( departments_seq.NEXTVAL
+      ( 100
       , 'Finance'
       , 108 );
 
   INSERT INTO departments VALUES
-      ( departments_seq.NEXTVAL
+      ( 110
       , 'Accounting'
       , 205 );
 
   INSERT INTO departments VALUES
-      ( departments_seq.NEXTVAL
+      ( 120
       , 'Treasury'
       , 220);
 
   INSERT INTO departments VALUES
-      ( departments_seq.NEXTVAL
+      ( 130
       , 'Corporate Tax'
       , 206);
 
   INSERT INTO departments VALUES
-      ( departments_seq.NEXTVAL
+      ( 140
       , 'Control And Credit'
       , 207);
 
   INSERT INTO departments VALUES
-      ( departments_seq.NEXTVAL
+      ( 150
       , 'Shareholder Services'
       , 208 );
 
   INSERT INTO departments VALUES
-      ( departments_seq.NEXTVAL
+      ( 160
       , 'Benefits'
       , 209);
 
   INSERT INTO departments VALUES
-      ( departments_seq.NEXTVAL
+      ( 170
       , 'Manufacturing'
       , 210 );
 
   INSERT INTO departments VALUES
-      ( departments_seq.NEXTVAL
+      ( 180
       , 'Construction'
       , 211);
 
   INSERT INTO departments VALUES
-      ( departments_seq.NEXTVAL
+      ( 190
       , 'Contracting'
       , 220 );
 
   INSERT INTO departments VALUES
-      ( departments_seq.NEXTVAL
+      ( 200
       , 'Operations'
       , 323);
 
   INSERT INTO departments VALUES
-      ( departments_seq.NEXTVAL
+      ( 210
       , 'IT Support'
       , 123);
 
   INSERT INTO departments VALUES
-      ( departments_seq.NEXTVAL
+      ( 220
       , 'NOC'
       , 240);
 
   INSERT INTO departments VALUES
-      ( departments_seq.NEXTVAL
+      ( 230
       , 'IT Helpdesk'
       , 111 );
 
   INSERT INTO departments VALUES
-      ( departments_seq.NEXTVAL
+      ( 240
       , 'Government Sales'
       , 306);
 
   INSERT INTO departments VALUES
-      ( departments_seq.NEXTVAL
+      ( 250
       , 'Retail Sales'
       , 231);
 
   INSERT INTO departments VALUES
-      ( departments_seq.NEXTVAL
+      ( 260
       , 'Recruiting'
       , 302);
 
   INSERT INTO departments VALUES
-      ( departments_seq.NEXTVAL
+      ( 270
       , 'Payroll'
       , 301);
 END;
