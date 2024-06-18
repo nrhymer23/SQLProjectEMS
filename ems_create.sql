@@ -1,3 +1,10 @@
+/*
+This Script Serves and Contains the queries and sequences for the Employee Management System 
+
+*/
+
+
+
 -- Create sequences
 CREATE SEQUENCE departments_seq
 START WITH 10
@@ -14,6 +21,8 @@ MAXVALUE 999
 NOCACHE
 NOCYCLE;
 
+--Table creation
+--Departments table holds the department id, department name, and manager_id
 
 CREATE TABLE departments
 (
@@ -24,7 +33,7 @@ CREATE TABLE departments
     manager_id NUMBER(6)
 );
 
-
+--Jobs table contains the job ids, assigns a max salary and a min salary.
 
 CREATE TABLE jobs
 (
@@ -39,6 +48,7 @@ CREATE TABLE jobs
         CHECK (min_salary >= 30000)
 );
 
+--The employees table contains the information of the employees which includes the Id, first name, last name, email, phone number, hire date, their job id, salary, commison pct, manager id, and department id.
 
 CREATE TABLE employees (
     employee_id NUMBER(3) CONSTRAINT employee_id_pk PRIMARY KEY,

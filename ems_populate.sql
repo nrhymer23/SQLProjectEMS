@@ -1,3 +1,7 @@
+/*
+This Script inserts the test data into the table. 
+*/
+
 
 ----------
 --Inserting data into Department table 
