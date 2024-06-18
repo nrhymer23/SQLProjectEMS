@@ -1,7 +1,7 @@
 ---Procedures for EMS
 SET SERVEROUTPUT ON;
 
-select * from employees
+select * from employees;
 
 
 --Adding Employee
