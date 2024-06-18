@@ -4,137 +4,137 @@
 
 BEGIN
   INSERT INTO departments VALUES
-      ( 10
+      ( departments_seq.NEXTVAL
       , 'Administration'
       , 200 );
 
   INSERT INTO departments VALUES
-      ( 20
+      ( departments_seq.NEXTVAL
       , 'Marketing'
       , 201 );
 
   INSERT INTO departments VALUES
-      ( 30
+      ( departments_seq.NEXTVAL
       , 'Purchasing'
       , 114);
 
   INSERT INTO departments VALUES
-      ( 40
+      ( departments_seq.NEXTVAL
       , 'Human Resources'
       , 203 );
 
   INSERT INTO departments VALUES
-      ( 50, 'Shipping', 121 );
+      ( departments_seq.NEXTVAL, 'Shipping', 121 );
 
   INSERT INTO departments VALUES
-      ( 60
+      ( departments_seq.NEXTVAL
       , 'IT'
       , 103);
 
   INSERT INTO departments VALUES
-      ( 70
+      ( departments_seq.NEXTVAL
       , 'Public Relations'
       , 204);
 
   INSERT INTO departments VALUES
-      ( 80
+      ( departments_seq.NEXTVAL
       , 'Sales'
       , 145);
 
   INSERT INTO departments VALUES
-      ( 90
+      ( departments_seq.NEXTVAL
       , 'Executive'
       , 100);
 
   INSERT INTO departments VALUES
-      ( 100
+      ( departments_seq.NEXTVAL
       , 'Finance'
       , 108 );
 
   INSERT INTO departments VALUES
-      ( 110
+      ( departments_seq.NEXTVAL
       , 'Accounting'
       , 205 );
 
   INSERT INTO departments VALUES
-      ( 120
+      ( departments_seq.NEXTVAL
       , 'Treasury'
-      , NULL);
+      , 220);
 
   INSERT INTO departments VALUES
-      ( 130
+      ( departments_seq.NEXTVAL
       , 'Corporate Tax'
-      , NULL);
+      , 206);
 
   INSERT INTO departments VALUES
-      ( 140
+      ( departments_seq.NEXTVAL
       , 'Control And Credit'
-      , NULL);
+      , 207);
 
   INSERT INTO departments VALUES
-      ( 150
+      ( departments_seq.NEXTVAL
       , 'Shareholder Services'
-      , NULL );
+      , 208 );
 
   INSERT INTO departments VALUES
-      ( 160
+      ( departments_seq.NEXTVAL
       , 'Benefits'
-      , NULL);
+      , 209);
 
   INSERT INTO departments VALUES
-      ( 170
+      ( departments_seq.NEXTVAL
       , 'Manufacturing'
-      , NULL );
+      , 210 );
 
   INSERT INTO departments VALUES
-      ( 180
+      ( departments_seq.NEXTVAL
       , 'Construction'
-      , NULL);
+      , 211);
 
   INSERT INTO departments VALUES
-      ( 190
+      ( departments_seq.NEXTVAL
       , 'Contracting'
-      , NULL );
+      , 220 );
 
   INSERT INTO departments VALUES
-      ( 200
+      ( departments_seq.NEXTVAL
       , 'Operations'
-      , NULL);
+      , 323);
 
   INSERT INTO departments VALUES
-      ( 210
+      ( departments_seq.NEXTVAL
       , 'IT Support'
-      , NULL);
+      , 123);
 
   INSERT INTO departments VALUES
-      ( 220
+      ( departments_seq.NEXTVAL
       , 'NOC'
-      , NULL);
+      , 240);
 
   INSERT INTO departments VALUES
-      ( 230
+      ( departments_seq.NEXTVAL
       , 'IT Helpdesk'
-      , NULL );
+      , 111 );
 
   INSERT INTO departments VALUES
-      ( 240
+      ( departments_seq.NEXTVAL
       , 'Government Sales'
-      , NULL);
+      , 306);
 
   INSERT INTO departments VALUES
-      ( 250
+      ( departments_seq.NEXTVAL
       , 'Retail Sales'
-      , NULL);
+      , 231);
 
   INSERT INTO departments VALUES
-      ( 260
+      ( departments_seq.NEXTVAL
       , 'Recruiting'
-      , NULL);
+      , 302);
 
   INSERT INTO departments VALUES
-      ( 270
+      ( departments_seq.NEXTVAL
       , 'Payroll'
-      , NULL);
+      , 301);
 END;
 
 --------------
@@ -142,7 +142,7 @@ END;
 
 BEGIN
   INSERT INTO employees VALUES
-      ( 100
+      ( employees_seq.NEXTVAL
       , 'Steven'
       , 'King'
       , 'SKING'
@@ -156,7 +156,7 @@ BEGIN
       );
 
   INSERT INTO employees VALUES
-      ( 101
+      ( employees_seq.NEXTVAL
       , 'Neena'
       , 'Yang'
       , 'NYANG'
@@ -170,7 +170,7 @@ BEGIN
       );
 
   INSERT INTO employees VALUES
-      ( 102
+      ( employees_seq.NEXTVAL
       , 'Lex'
       , 'Garcia'
       , 'LGARCIA'
@@ -184,7 +184,7 @@ BEGIN
       );
 
   INSERT INTO employees VALUES
-      ( 103
+      ( employees_seq.NEXTVAL
       , 'Alexander'
       , 'James'
       , 'AJAMES'
@@ -198,7 +198,7 @@ BEGIN
       );
 
   INSERT INTO employees VALUES
-      ( 104
+      ( employees_seq.NEXTVAL
       , 'Bruce'
       , 'Miller'
       , 'BMILLER'
@@ -212,7 +212,7 @@ BEGIN
       );
 
   INSERT INTO employees VALUES
-      ( 105
+      ( employees_seq.NEXTVAL
       , 'David'
       , 'Williams'
       , 'DWILLIAMS'
@@ -226,7 +226,7 @@ BEGIN
       );
 
   INSERT INTO employees VALUES
-      ( 106
+      ( employees_seq.NEXTVAL
       , 'Valli'
       , 'Jackson'
       , 'VJACKSON'
@@ -240,7 +240,7 @@ BEGIN
       );
 
   INSERT INTO employees VALUES
-      ( 107
+      ( employees_seq.NEXTVAL
       , 'Diana'
       , 'Nguyen'
       , 'DNGUYEN'
@@ -254,7 +254,7 @@ BEGIN
       );
 
   INSERT INTO employees VALUES
-      ( 108
+      ( employees_seq.NEXTVAL
       , 'Nancy'
       , 'Gruenberg'
       , 'NGRUENBE'
@@ -268,7 +268,7 @@ BEGIN
       );
 
   INSERT INTO employees VALUES
-      ( 109
+      ( employees_seq.NEXTVAL
       , 'Daniel'
       , 'Faviet'
       , 'DFAVIET'
@@ -282,7 +282,7 @@ BEGIN
       );
 
   INSERT INTO employees VALUES
-      ( 110
+      ( employees_seq.NEXTVAL
       , 'John'
       , 'Chen'
       , 'JCHEN'
@@ -296,7 +296,7 @@ BEGIN
       );
 
   INSERT INTO employees VALUES
-      ( 111
+      ( employees_seq.NEXTVAL
       , 'Ismael'
       , 'Sciarra'
       , 'ISCIARRA'
@@ -310,7 +310,7 @@ BEGIN
       );
 
   INSERT INTO employees VALUES
-      ( 112
+      ( employees_seq.NEXTVAL
       , 'Jose Manuel'
       , 'Urman'
       , 'JMURMAN'
@@ -324,7 +324,7 @@ BEGIN
       );
 
   INSERT INTO employees VALUES
-      ( 113
+      ( employees_seq.NEXTVAL
       , 'Luis'
       , 'Popp'
       , 'LPOPP'
@@ -338,7 +338,7 @@ BEGIN
       );
 
   INSERT INTO employees VALUES
-      ( 114
+      ( employees_seq.NEXTVAL
       , 'Den'
       , 'Li'
       , 'DLI'
@@ -352,7 +352,7 @@ BEGIN
       );
 
   INSERT INTO employees VALUES
-      ( 115
+      ( employees_seq.NEXTVAL
       , 'Alexander'
       , 'Khoo'
       , 'AKHOO'
@@ -366,7 +366,7 @@ BEGIN
       );
 
   INSERT INTO employees VALUES
-      ( 116
+      ( employees_seq.NEXTVAL
       , 'Shelli'
       , 'Baida'
       , 'SBAIDA'
@@ -380,7 +380,7 @@ BEGIN
       );
 
   INSERT INTO employees VALUES
-      ( 117
+      ( employees_seq.NEXTVAL
       , 'Sigal'
       , 'Tobias'
       , 'STOBIAS'
@@ -394,7 +394,7 @@ BEGIN
       );
 
   INSERT INTO employees VALUES
-      ( 118
+      ( employees_seq.NEXTVAL
       , 'Guy'
       , 'Himuro'
       , 'GHIMURO'
@@ -408,7 +408,7 @@ BEGIN
       );
 
   INSERT INTO employees VALUES
-      ( 119
+      ( employees_seq.NEXTVAL
       , 'Karen'
       , 'Colmenares'
       , 'KCOLMENA'
@@ -422,7 +422,7 @@ BEGIN
       );
 
   INSERT INTO employees VALUES
-      ( 120
+      ( employees_seq.NEXTVAL
       , 'Matthew'
       , 'Weiss'
       , 'MWEISS'
@@ -436,7 +436,7 @@ BEGIN
       );
 
   INSERT INTO employees VALUES
-      ( 121
+      ( employees_seq.NEXTVAL
       , 'Adam'
       , 'Fripp'
       , 'AFRIPP'
@@ -450,7 +450,7 @@ BEGIN
       );
 
   INSERT INTO employees VALUES
-      ( 122
+      ( employees_seq.NEXTVAL
       , 'Payam'
       , 'Kaufling'
       , 'PKAUFLIN'
@@ -464,7 +464,7 @@ BEGIN
       );
 
   INSERT INTO employees VALUES
-      ( 123
+      ( employees_seq.NEXTVAL
       , 'Shanta'
       , 'Vollman'
       , 'SVOLLMAN'
@@ -478,7 +478,7 @@ BEGIN
       );
 
   INSERT INTO employees VALUES
-      ( 124
+      ( employees_seq.NEXTVAL
       , 'Kevin'
       , 'Mourgos'
       , 'KMOURGOS'
@@ -492,7 +492,7 @@ BEGIN
       );
 
   INSERT INTO employees VALUES
-      ( 125
+      ( employees_seq.NEXTVAL
       , 'Julia'
       , 'Nayer'
       , 'JNAYER'
@@ -506,7 +506,7 @@ BEGIN
       );
 
   INSERT INTO employees VALUES
-      ( 126
+      ( employees_seq.NEXTVAL
       , 'Irene'
       , 'Mikkilineni'
       , 'IMIKKILI'
@@ -520,7 +520,7 @@ BEGIN
       );
 
   INSERT INTO employees VALUES
-      ( 127
+      ( employees_seq.NEXTVAL
       , 'James'
       , 'Landry'
       , 'JLANDRY'
@@ -534,7 +534,7 @@ BEGIN
       );
 
   INSERT INTO employees VALUES
-      ( 128
+      ( employees_seq.NEXTVAL
       , 'Steven'
       , 'Markle'
       , 'SMARKLE'
@@ -548,7 +548,7 @@ BEGIN
       );
 
   INSERT INTO employees VALUES
-      ( 129
+      ( employees_seq.NEXTVAL
       , 'Laura'
       , 'Bissot'
       , 'LBISSOT'
@@ -562,7 +562,7 @@ BEGIN
       );
 
   INSERT INTO employees VALUES
-      ( 130
+      ( employees_seq.NEXTVAL
       , 'Mozhe'
       , 'Atkinson'
       , 'MATKINSO'
@@ -576,7 +576,7 @@ BEGIN
       );
 
   INSERT INTO employees VALUES
-      ( 131
+      ( employees_seq.NEXTVAL
       , 'James'
       , 'Marlow'
       , 'JAMRLOW'
@@ -590,7 +590,7 @@ BEGIN
       );
 
   INSERT INTO employees VALUES
-      ( 132
+      ( employees_seq.NEXTVAL
       , 'TJ'
       , 'Olson'
       , 'TJOLSON'
@@ -604,7 +604,7 @@ BEGIN
       );
 
   INSERT INTO employees VALUES
-      ( 133
+      ( employees_seq.NEXTVAL
       , 'Jason'
       , 'Mallin'
       , 'JMALLIN'
@@ -618,7 +618,7 @@ BEGIN
       );
 
   INSERT INTO employees VALUES
-      ( 134
+      ( employees_seq.NEXTVAL
       , 'Michael'
       , 'Rogers'
       , 'MROGERS'
@@ -632,7 +632,7 @@ BEGIN
       );
 
   INSERT INTO employees VALUES
-      ( 135
+      ( employees_seq.NEXTVAL
       , 'Ki'
       , 'Gee'
       , 'KGEE'
@@ -646,7 +646,7 @@ BEGIN
       );
 
   INSERT INTO employees VALUES
-      ( 136
+      ( employees_seq.NEXTVAL
       , 'Hazel'
       , 'Philtanker'
       , 'HPHILTAN'
@@ -660,7 +660,7 @@ BEGIN
       );
 
   INSERT INTO employees VALUES
-      ( 137
+      ( employees_seq.NEXTVAL
       , 'Renske'
       , 'Ladwig'
       , 'RLADWIG'
@@ -674,7 +674,7 @@ BEGIN
       );
 
   INSERT INTO employees VALUES
-      ( 138
+      ( employees_seq.NEXTVAL
       , 'Stephen'
       , 'Stiles'
       , 'SSTILES'
@@ -688,7 +688,7 @@ BEGIN
       );
 
   INSERT INTO employees VALUES
-      ( 139
+      ( employees_seq.NEXTVAL
       , 'John'
       , 'Seo'
       , 'JSEO'
@@ -702,7 +702,7 @@ BEGIN
       );
 
   INSERT INTO employees VALUES
-      ( 140
+      ( employees_seq.NEXTVAL
       , 'Joshua'
       , 'Patel'
       , 'JPATEL'
@@ -716,7 +716,7 @@ BEGIN
       );
 
   INSERT INTO employees VALUES
-      ( 141
+      ( employees_seq.NEXTVAL
       , 'Trenna'
       , 'Rajs'
       , 'TRAJS'
@@ -730,7 +730,7 @@ BEGIN
       );
 
   INSERT INTO employees VALUES
-      ( 142
+      ( employees_seq.NEXTVAL
       , 'Curtis'
       , 'Davies'
       , 'CDAVIES'
@@ -744,7 +744,7 @@ BEGIN
       );
 
   INSERT INTO employees VALUES
-      ( 143
+      ( employees_seq.NEXTVAL
       , 'Randall'
       , 'Matos'
       , 'RMATOS'
@@ -758,7 +758,7 @@ BEGIN
       );
 
   INSERT INTO employees VALUES
-      ( 144
+      ( employees_seq.NEXTVAL
       , 'Peter'
       , 'Vargas'
       , 'PVARGAS'
@@ -772,7 +772,7 @@ BEGIN
       );
 
   INSERT INTO employees VALUES
-      ( 145
+      ( employees_seq.NEXTVAL
       , 'John'
       , 'Singh'
       , 'JSINGH'
@@ -786,7 +786,7 @@ BEGIN
       );
 
   INSERT INTO employees VALUES
-      ( 146
+      ( employees_seq.NEXTVAL
       , 'Karen'
       , 'Partners'
       , 'KPARTNER'
@@ -800,7 +800,7 @@ BEGIN
       );
 
   INSERT INTO employees VALUES
-      ( 147
+      ( employees_seq.NEXTVAL
       , 'Alberto'
       , 'Errazuriz'
       , 'AERRAZUR'
@@ -814,7 +814,7 @@ BEGIN
       );
 
   INSERT INTO employees VALUES
-      ( 148
+      ( employees_seq.NEXTVAL
       , 'Gerald'
       , 'Cambrault'
       , 'GCAMBRAU'
@@ -828,7 +828,7 @@ BEGIN
       );
 
   INSERT INTO employees VALUES
-      ( 149
+      ( employees_seq.NEXTVAL
       , 'Eleni'
       , 'Zlotkey'
       , 'EZLOTKEY'
@@ -842,7 +842,7 @@ BEGIN
       );
 
   INSERT INTO employees VALUES
-      ( 150
+      ( employees_seq.NEXTVAL
       , 'Sean'
       , 'Tucker'
       , 'STUCKER'
@@ -856,7 +856,7 @@ BEGIN
       );
 
   INSERT INTO employees VALUES
-      ( 151
+      ( employees_seq.NEXTVAL
       , 'David'
       , 'Bernstein'
       , 'DBERNSTE'
@@ -870,7 +870,7 @@ BEGIN
       );
 
   INSERT INTO employees VALUES
-      ( 152
+      ( employees_seq.NEXTVAL
       , 'Peter'
       , 'Hall'
       , 'PHALL'
@@ -884,7 +884,7 @@ BEGIN
       );
 
   INSERT INTO employees VALUES
-      ( 153
+      ( employees_seq.NEXTVAL
       , 'Christopher'
       , 'Olsen'
       , 'COLSEN'
@@ -898,7 +898,7 @@ BEGIN
       );
 
   INSERT INTO employees VALUES
-      ( 154
+      ( employees_seq.NEXTVAL
       , 'Nanette'
       , 'Cambrault'
       , 'NCAMBRAU'
@@ -912,7 +912,7 @@ BEGIN
       );
 
   INSERT INTO employees VALUES
-      ( 155
+      ( employees_seq.NEXTVAL
       , 'Oliver'
       , 'Tuvault'
       , 'OTUVAULT'
@@ -926,7 +926,7 @@ BEGIN
       );
 
   INSERT INTO employees VALUES
-      ( 156
+      ( employees_seq.NEXTVAL
       , 'Janette'
       , 'King'
       , 'JKING'
@@ -940,7 +940,7 @@ BEGIN
       );
 
   INSERT INTO employees VALUES
-      ( 157
+      ( employees_seq.NEXTVAL
       , 'Patrick'
       , 'Sully'
       , 'PSULLY'
@@ -954,7 +954,7 @@ BEGIN
       );
 
   INSERT INTO employees VALUES
-      ( 158
+      ( employees_seq.NEXTVAL
       , 'Allan'
       , 'McEwen'
       , 'AMCEWEN'
@@ -968,7 +968,7 @@ BEGIN
       );
 
   INSERT INTO employees VALUES
-      ( 159
+      ( employees_seq.NEXTVAL
       , 'Lindsey'
       , 'Smith'
       , 'LSMITH'
@@ -982,7 +982,7 @@ BEGIN
       );
 
   INSERT INTO employees VALUES
-      ( 160
+      ( employees_seq.NEXTVAL
       , 'Louise'
       , 'Doran'
       , 'LDORAN'
@@ -996,7 +996,7 @@ BEGIN
       );
 
   INSERT INTO employees VALUES
-      ( 161
+      ( employees_seq.NEXTVAL
       , 'Sarath'
       , 'Sewall'
       , 'SSEWALL'
@@ -1010,7 +1010,7 @@ BEGIN
       );
 
   INSERT INTO employees VALUES
-      ( 162
+      ( employees_seq.NEXTVAL
       , 'Clara'
       , 'Vishney'
       , 'CVISHNEY'
@@ -1024,7 +1024,7 @@ BEGIN
       );
 
   INSERT INTO employees VALUES
-      ( 163
+      ( employees_seq.NEXTVAL
       , 'Danielle'
       , 'Greene'
       , 'DGREENE'
@@ -1038,7 +1038,7 @@ BEGIN
       );
 
   INSERT INTO employees VALUES
-      ( 164
+      ( employees_seq.NEXTVAL
       , 'Mattea'
       , 'Marvins'
       , 'MMARVINS'
@@ -1052,7 +1052,7 @@ BEGIN
       );
 
   INSERT INTO employees VALUES
-      ( 165
+      ( employees_seq.NEXTVAL
       , 'David'
       , 'Lee'
       , 'DLEE'
@@ -1066,7 +1066,7 @@ BEGIN
       );
 
   INSERT INTO employees VALUES
-      ( 166
+      ( employees_seq.NEXTVAL
       , 'Sundar'
       , 'Ande'
       , 'SANDE'
@@ -1080,7 +1080,7 @@ BEGIN
       );
 
   INSERT INTO employees VALUES
-      ( 167
+      ( employees_seq.NEXTVAL
       , 'Amit'
       , 'Banda'
       , 'ABANDA'
@@ -1094,7 +1094,7 @@ BEGIN
       );
 
   INSERT INTO employees VALUES
-      ( 168
+      ( employees_seq.NEXTVAL
       , 'Lisa'
       , 'Ozer'
       , 'LOZER'
@@ -1108,7 +1108,7 @@ BEGIN
       );
 
   INSERT INTO employees VALUES
-      ( 169
+      ( employees_seq.NEXTVAL
       , 'Harrison'
       , 'Bloom'
       , 'HBLOOM'
@@ -1122,7 +1122,7 @@ BEGIN
       );
 
   INSERT INTO employees VALUES
-      ( 170
+      ( employees_seq.NEXTVAL
       , 'Tayler'
       , 'Fox'
       , 'TFOX'
@@ -1136,7 +1136,7 @@ BEGIN
       );
 
   INSERT INTO employees VALUES
-      ( 171
+      ( employees_seq.NEXTVAL
       , 'William'
       , 'Smith'
       , 'WSMITH'
@@ -1150,7 +1150,7 @@ BEGIN
       );
 
   INSERT INTO employees VALUES
-      ( 172
+      ( employees_seq.NEXTVAL
       , 'Elizabeth'
       , 'Bates'
       , 'EBATES'
@@ -1164,7 +1164,7 @@ BEGIN
       );
 
   INSERT INTO employees VALUES
-      ( 173
+      ( employees_seq.NEXTVAL
       , 'Sundita'
       , 'Kumar'
       , 'SKUMAR'
@@ -1178,7 +1178,7 @@ BEGIN
       );
 
   INSERT INTO employees VALUES
-      ( 174
+      ( employees_seq.NEXTVAL
       , 'Ellen'
       , 'Abel'
       , 'EABEL'
@@ -1192,7 +1192,7 @@ BEGIN
       );
 
   INSERT INTO employees VALUES
-      ( 175
+      ( employees_seq.NEXTVAL
       , 'Alyssa'
       , 'Hutton'
       , 'AHUTTON'
@@ -1206,7 +1206,7 @@ BEGIN
       );
 
   INSERT INTO employees VALUES
-      ( 176
+      ( employees_seq.NEXTVAL
       , 'Jonathon'
       , 'Taylor'
       , 'JTAYLOR'
@@ -1220,7 +1220,7 @@ BEGIN
       );
 
   INSERT INTO employees VALUES
-      ( 177
+      ( employees_seq.NEXTVAL
       , 'Jack'
       , 'Livingston'
       , 'JLIVINGS'
@@ -1234,7 +1234,7 @@ BEGIN
       );
 
   INSERT INTO employees VALUES
-      ( 178
+      ( employees_seq.NEXTVAL
       , 'Kimberely'
       , 'Grant'
       , 'KGRANT'
@@ -1248,7 +1248,7 @@ BEGIN
       );
 
   INSERT INTO employees VALUES
-      ( 179
+      ( employees_seq.NEXTVAL
       , 'Charles'
       , 'Johnson'
       , 'CJOHNSON'
@@ -1262,7 +1262,7 @@ BEGIN
       );
 
   INSERT INTO employees VALUES
-      ( 180
+      ( employees_seq.NEXTVAL
       , 'Winston'
       , 'Taylor'
       , 'WTAYLOR'
@@ -1276,7 +1276,7 @@ BEGIN
       );
 
   INSERT INTO employees VALUES
-      ( 181
+      ( employees_seq.NEXTVAL
       , 'Jean'
       , 'Fleaur'
       , 'JFLEAUR'
@@ -1290,7 +1290,7 @@ BEGIN
       );
 
   INSERT INTO employees VALUES
-      ( 182
+      ( employees_seq.NEXTVAL
       , 'Martha'
       , 'Sullivan'
       , 'MSULLIVA'
@@ -1304,7 +1304,7 @@ BEGIN
       );
 
   INSERT INTO employees VALUES
-      ( 183
+      ( employees_seq.NEXTVAL
       , 'Girard'
       , 'Geoni'
       , 'GGEONI'
@@ -1318,7 +1318,7 @@ BEGIN
       );
 
   INSERT INTO employees VALUES
-      ( 184
+      ( employees_seq.NEXTVAL
       , 'Nandita'
       , 'Sarchand'
       , 'NSARCHAN'
@@ -1332,7 +1332,7 @@ BEGIN
       );
 
   INSERT INTO employees VALUES
-      ( 185
+      ( employees_seq.NEXTVAL
       , 'Alexis'
       , 'Bull'
       , 'ABULL'
@@ -1346,7 +1346,7 @@ BEGIN
       );
 
   INSERT INTO employees VALUES
-      ( 186
+      ( employees_seq.NEXTVAL
       , 'Julia'
       , 'Dellinger'
       , 'JDELLING'
@@ -1360,7 +1360,7 @@ BEGIN
       );
 
   INSERT INTO employees VALUES
-      ( 187
+      ( employees_seq.NEXTVAL
       , 'Anthony'
       , 'Cabrio'
       , 'ACABRIO'
@@ -1374,7 +1374,7 @@ BEGIN
       );
 
   INSERT INTO employees VALUES
-      ( 188
+      ( employees_seq.NEXTVAL
       , 'Kelly'
       , 'Chung'
       , 'KCHUNG'
@@ -1388,7 +1388,7 @@ BEGIN
       );
 
   INSERT INTO employees VALUES
-      ( 189
+      ( employees_seq.NEXTVAL
       , 'Jennifer'
       , 'Dilly'
       , 'JDILLY'
@@ -1402,7 +1402,7 @@ BEGIN
       );
 
   INSERT INTO employees VALUES
-      ( 190
+      ( employees_seq.NEXTVAL
       , 'Timothy'
       , 'Venzl'
       , 'TVENZL'
@@ -1416,7 +1416,7 @@ BEGIN
       );
 
   INSERT INTO employees VALUES
-      ( 191
+      ( employees_seq.NEXTVAL
       , 'Randall'
       , 'Perkins'
       , 'RPERKINS'
@@ -1430,7 +1430,7 @@ BEGIN
       );
 
   INSERT INTO employees VALUES
-      ( 192
+      ( employees_seq.NEXTVAL
       , 'Sarah'
       , 'Bell'
       , 'SBELL'
@@ -1444,7 +1444,7 @@ BEGIN
       );
 
   INSERT INTO employees VALUES
-      ( 193
+      ( employees_seq.NEXTVAL
       , 'Britney'
       , 'Everett'
       , 'BEVERETT'
@@ -1458,7 +1458,7 @@ BEGIN
       );
 
   INSERT INTO employees VALUES
-      ( 194
+      ( employees_seq.NEXTVAL
       , 'Samuel'
       , 'McLeod'
       , 'SMCLEOD'
@@ -1472,7 +1472,7 @@ BEGIN
       );
 
   INSERT INTO employees VALUES
-      ( 195
+      ( employees_seq.NEXTVAL
       , 'Vance'
       , 'Jones'
       , 'VJONES'
@@ -1486,7 +1486,7 @@ BEGIN
       );
 
   INSERT INTO employees VALUES
-      ( 196
+      ( employees_seq.NEXTVAL
       , 'Alana'
       , 'Walsh'
       , 'AWALSH'
@@ -1500,7 +1500,7 @@ BEGIN
       );
 
   INSERT INTO employees VALUES
-      ( 197
+      ( employees_seq.NEXTVAL
       , 'Kevin'
       , 'Feeney'
       , 'KFEENEY'
@@ -1514,7 +1514,7 @@ BEGIN
       );
 
   INSERT INTO employees VALUES
-      ( 198
+      ( employees_seq.NEXTVAL
       , 'Donald'
       , 'OConnell'
       , 'DOCONNEL'
@@ -1528,7 +1528,7 @@ BEGIN
       );
 
   INSERT INTO employees VALUES
-      ( 199
+      ( employees_seq.NEXTVAL
       , 'Douglas'
       , 'Grant'
       , 'DGRANT'
@@ -1542,7 +1542,7 @@ BEGIN
       );
 
   INSERT INTO employees VALUES
-      ( 200
+      ( employees_seq.NEXTVAL
       , 'Jennifer'
       , 'Whalen'
       , 'JWHALEN'
@@ -1556,7 +1556,7 @@ BEGIN
       );
 
   INSERT INTO employees VALUES
-      ( 201
+      ( employees_seq.NEXTVAL
       , 'Michael'
       , 'Martinez'
       , 'MMARTINE'
@@ -1570,7 +1570,7 @@ BEGIN
       );
 
   INSERT INTO employees VALUES
-      ( 202
+      ( employees_seq.NEXTVAL
       , 'Pat'
       , 'Davis'
       , 'PDAVIS'
@@ -1584,7 +1584,7 @@ BEGIN
       );
 
   INSERT INTO employees VALUES
-      ( 203
+      ( employees_seq.NEXTVAL
       , 'Susan'
       , 'Jacobs'
       , 'SJACOBS'
@@ -1598,7 +1598,7 @@ BEGIN
       );
 
   INSERT INTO employees VALUES
-      ( 204
+      ( employees_seq.NEXTVAL
       , 'Hermann'
       , 'Brown'
       , 'HBROWN'
@@ -1612,7 +1612,7 @@ BEGIN
       );
 
   INSERT INTO employees VALUES
-      ( 205
+      ( employees_seq.NEXTVAL
       , 'Shelley'
       , 'Higgins'
       , 'SHIGGINS'
@@ -1626,7 +1626,7 @@ BEGIN
       );
 
   INSERT INTO employees VALUES
-      ( 206
+      ( employees_seq.NEXTVAL
       , 'William'
       , 'Gietz'
       , 'WGIETZ'

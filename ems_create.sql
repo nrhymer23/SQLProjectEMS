@@ -1,4 +1,10 @@
 
+CREATE SEQUENCE departments_seq
+START WITH 20
+INCREMENT BY 10
+MAXVALUE 9999
+NOCACHE
+NOCYCLE;
 
 CREATE TABLE departments
 (
@@ -7,14 +13,16 @@ CREATE TABLE departments
     department_name VARCHAR2(30)
         CONSTRAINT  dept_name_nn  NOT NULL,
     manager_id NUMBER(6)
+        CONSTRAINT  manager_id_pk  PRIMARY KEY
 );
 
-CREATE SEQUENCE departments_seq
-START WITH 200
-INCREMENT BY 10
-MAXVALUE 9999
-NOCACHE
-NOCYCLE;
+drop table departments;
+drop table employees;
+drop table jobs;
+
+ALTER TABLE departments 
+ADD CONSTRAINT manager_id_pk PRIMARY KEY (manager_id);
+
 
 CREATE TABLE jobs
 (
@@ -23,11 +31,24 @@ CREATE TABLE jobs
         CONSTRAINT     job_title_nn  NOT NULL,
     max_salary NUMBER(6),
         CONSTRAINT max_salary_ck 
-        Check (max_salary <= 60000),
+        Check (max_salary <= 100000),
     min_salary NUMBER(6)
         CONSTRAINT min_salary_ck 
         CHECK (min_salary >= 30000)
 );
+
+
+CREATE SEQUENCE employees_seq
+START WITH 100
+INCREMENT BY 10
+MAXVALUE 500
+NOCACHE
+NOCYCLE;
+
+
+
+ALTER TABLE jobs 
+ADD CONSTRAINT job_id_pk PRIMARY KEY (job_id);
 
 CREATE TABLE employees (
     employee_id NUMBER(3)
@@ -52,18 +73,20 @@ CREATE TABLE employees (
         CONSTRAINT emp_dept_fk REFERENCES departments(department_id)
 );
 
+ALTER TABLE employees
+ADD ( CONSTRAINT     emp_job_fk
+                     FOREIGN KEY (job_id)
+                    REFERENCES jobs (job_id),
+      CONSTRAINT     emp_manager_fk
+                     FOREIGN KEY (manager_id)
+                      REFERENCES departments
+    
+)
+
 drop table employees;
 
 
-
-CREATE SEQUENCE employees_seq
-START WITH 100
-INCREMENT BY 10
-MAXVALUE 500
-NOCACHE
-NOCYCLE;
-
-----EMS emp_detail_view displays a joined version 
+----EMS emp_detail_view displays a joined version for prequeried report
 
 CREATE OR REPLACE VIEW  emp_details_view
 (
