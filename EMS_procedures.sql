@@ -49,6 +49,14 @@ BEGIN
     --DBMS_OUTPUT.PUT_LINE('Employee with ID ' || p_employee_id || ' has been deleted.');
 END;
 
+---View Sorted Employees 
+DECLARE
+    v_sort_by VARCHAR2(20) := '&sort_by';
+BEGIN
+    view_employees_sorted(p_sort_by => v_sort_by);
+END;
+
+
 ---Fetching Employees by ID
 DECLARE
     v_employee_id      employees.employee_id%TYPE := &employee_id;
@@ -90,6 +98,7 @@ BEGIN
     DBMS_OUTPUT.PUT_LINE('Department ID: ' || v_department_id);
 END;
 
+
 ---Fetching Employees by Department 
 
 DECLARE
@@ -127,6 +136,21 @@ BEGIN
 
     CLOSE v_employee_cursor;
 END;
+
+
+---Procedure to generate the employee listing report
+---Each employee's details, such as ID, name, email, phone number, hire date, job ID, salary, and department ID, are displayed
+---Sorted by ID
+BEGIN
+    generate_employee_listing;
+END;
+
+---Procedure to generate department summary report
+---It shows the department ID, name, the number of employees in the department, and the average salary of employees in that department.
+BEGIN
+    generate_department_summary;
+END;
+
 
 
 /*
