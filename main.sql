@@ -11,6 +11,8 @@ BEGIN
 END;
 
 
+
+/*
 DECLARE
     v_choice NUMBER;
 BEGIN
@@ -21,9 +23,15 @@ BEGIN
     ELSIF v_choice = 2 THEN
         UPDATE_EMPLOYEE;
     ELSIF v_choice = 3 THEN
-    FETCH_EMPLOYEES_BY_DEPARTMENT;
+        FETCH_EMPLOYEES_BY_DEPARTMENT;
     ELSE
         DBMS_OUTPUT.PUT_LINE('Invalid choice');
     END IF;
 END;
-/
+*/
+
+EXECUTE add_employee;
+
+DROP TABLE EMPLOYEES;
+DROP TABLE JOBS;
+DROP TABLE DEPARTMENTS;

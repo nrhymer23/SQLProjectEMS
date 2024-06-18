@@ -13,15 +13,7 @@ CREATE TABLE departments
     department_name VARCHAR2(30)
         CONSTRAINT  dept_name_nn  NOT NULL,
     manager_id NUMBER(6)
-        CONSTRAINT  manager_id_pk  PRIMARY KEY
 );
-
-drop table departments;
-drop table employees;
-drop table jobs;
-
-ALTER TABLE departments 
-ADD CONSTRAINT manager_id_pk PRIMARY KEY (manager_id);
 
 
 CREATE TABLE jobs
@@ -39,12 +31,11 @@ CREATE TABLE jobs
 
 
 CREATE SEQUENCE employees_seq
-START WITH 100
-INCREMENT BY 10
-MAXVALUE 500
+START WITH 10
+INCREMENT BY 2
+MAXVALUE 999
 NOCACHE
 NOCYCLE;
-
 
 
 ALTER TABLE jobs 
@@ -70,21 +61,17 @@ CREATE TABLE employees (
     commission_pct NUMBER(2,2),
     manager_id NUMBER(6),
     department_id NUMBER(4)
-        CONSTRAINT emp_dept_fk REFERENCES departments(department_id)
+        
 );
 
 ALTER TABLE employees
 ADD ( CONSTRAINT     emp_job_fk
                      FOREIGN KEY (job_id)
-                    REFERENCES jobs (job_id),
-      CONSTRAINT     emp_manager_fk
-                     FOREIGN KEY (manager_id)
-                      REFERENCES departments
+                    REFERENCES jobs (job_id)
+);
     
-)
-
+    
 drop table employees;
-
 
 ----EMS emp_detail_view displays a joined version for prequeried report
 
@@ -123,6 +110,8 @@ CREATE OR REPLACE VIEW  emp_details_view
     e.job_id = j.job_id
     AND e.department_id = d.department_id
     WITH READ ONLY; 
+
+
 
 
 
