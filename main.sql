@@ -3,17 +3,6 @@
 --This file Serves as the UI for the Application.
 SET SERVEROUTPUT ON;
 
-BEGIN
-     DBMS_OUTPUT.PUT_LINE('Select an option:');
-    DBMS_OUTPUT.PUT_LINE('1. Add Employee');
-    DBMS_OUTPUT.PUT_LINE('2. Update Employee');
-    DBMS_OUTPUT.PUT_LINE('3. Fetch Employees by Department');
-END;
-
-
-
-
-
 DECLARE
     user_choice VARCHAR2(2);
     emp_id NUMBER;
@@ -126,6 +115,16 @@ END;
 
 
 /*
+
+BEGIN
+     DBMS_OUTPUT.PUT_LINE('Select an option:');
+    DBMS_OUTPUT.PUT_LINE('1. Add Employee');
+    DBMS_OUTPUT.PUT_LINE('2. Update Employee');
+    DBMS_OUTPUT.PUT_LINE('3. Fetch Employees by Department');
+END;
+
+
+
 DECLARE
     v_choice NUMBER;
 BEGIN

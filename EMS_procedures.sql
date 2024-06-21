@@ -49,11 +49,14 @@ BEGIN
     --DBMS_OUTPUT.PUT_LINE('Employee with ID ' || p_employee_id || ' has been deleted.');
 END;
 
+select * from employees where employee_id = 480;
+
 ---View Sorted Employees 
+--- You have the option to choose by postion,start date, name, salary or department
 DECLARE
     v_sort_by VARCHAR2(20) := '&sort_by';
 BEGIN
-    view_employees_sorted(p_sort_by => v_sort_by);
+    view_sorted_employees(p_sort_by => v_sort_by);
 END;
 
 
